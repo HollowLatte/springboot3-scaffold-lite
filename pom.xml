@@ -5,7 +5,7 @@
 
     <groupId>com.hollowlatte.archetypes</groupId>
     <artifactId>springboot3-scaffold-lite</artifactId>
-    <version>2.0</version>
+    <version>1.0.0</version>
     <packaging>maven-archetype</packaging>
 
     <name>springboot3-scaffold-lite</name>
