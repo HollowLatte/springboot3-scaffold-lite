@@ -3,19 +3,19 @@
 #set( $symbol_escape = '\' )
 package ${package}.config;
 
-import com.google.common.cache.Cache;
-import com.google.common.cache.CacheBuilder;
+import com.github.benmanes.caffeine.cache.Cache;
+import com.github.benmanes.caffeine.cache.Caffeine;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.concurrent.TimeUnit;
 
 @Configuration
-public class GuavaConfig {
+public class CaffeineConfig {
 
-    @Bean(name = "cache")
-    public Cache<String, String> cache() {
-        return CacheBuilder.newBuilder()
+    @Bean
+    public Cache<String, String> localCache() {
+        return Caffeine.newBuilder()
                 .expireAfterWrite(3, TimeUnit.SECONDS)
                 .build();
     }
