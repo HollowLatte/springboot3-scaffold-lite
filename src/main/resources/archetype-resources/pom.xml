@@ -231,9 +231,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <!--<configuration>-->
-                <!--    <mainClass>${groupId}.Application</mainClass>-->
-                <!--</configuration>-->
+                <configuration>
+                    <mainClass>${groupId}.${artifactId}.Application</mainClass>
+                </configuration>
                 <executions>
                     <execution>
                         <phase>package</phase>

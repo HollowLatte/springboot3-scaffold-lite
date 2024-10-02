@@ -1,7 +1,7 @@
 #set($symbol_pound='#')
 #set($symbol_dollar='$')
 #set($symbol_escape='\' )
-package ${package}.config;
+package ${package}.${artifactId}.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

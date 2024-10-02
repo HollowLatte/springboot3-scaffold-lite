@@ -7,7 +7,7 @@
 
 2. 使用脚手架生成工程：
     ```shell
-    mvn archetype:generate -DinteractiveMode=false -DarchetypeGroupId=com.hollowlatte.archetypes -DarchetypeArtifactId=springboot3-scaffold-lite -DarchetypeVersion=1.0.0 -DgroupId=com.hollowlatte.example -DartifactId=hello-test -Dversion=0.0.1 -DarchetypeCatalog=local -DoutputDirectory=../
+    mvn archetype:generate -DinteractiveMode=false -DarchetypeGroupId=com.hollowlatte.archetypes -DarchetypeArtifactId=springboot3-scaffold-lite -DarchetypeVersion=1.0.0 -DgroupId=com.hollowlatte -DartifactId=hellotest -Dversion=0.0.1 -DarchetypeCatalog=local -DoutputDirectory=../
     ```
 
 ## 远程仓库使用
@@ -19,7 +19,7 @@
 
 2. 使用脚手架生成工程：
    ```shell
-   mvn archetype:generate -DinteractiveMode=false -DarchetypeGroupId=com.hollowlatte.archetypes -DarchetypeArtifactId=springboot3-scaffold-lite -DarchetypeVersion=1.0.0 -DgroupId=com.hollowlatte.example -DartifactId=hello-test -Dversion=0.0.1 -DoutputDirectory=../
+   mvn archetype:generate -DinteractiveMode=false -DarchetypeGroupId=com.hollowlatte.archetypes -DarchetypeArtifactId=springboot3-scaffold-lite -DarchetypeVersion=1.0.0 -DgroupId=com.hollowlatte -DartifactId=hellotest -Dversion=0.0.1 -DoutputDirectory=../
    ```
 
 ## 生成效果

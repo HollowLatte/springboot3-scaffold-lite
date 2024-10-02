@@ -28,7 +28,7 @@
             <extension>
                 <groupId>org.apache.maven.archetype</groupId>
                 <artifactId>archetype-packaging</artifactId>
-                <version>3.2.0</version>
+                <version>3.3.0</version>
             </extension>
         </extensions>
 
@@ -65,7 +65,6 @@
                 <version>2.9.1</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
-                    <aggregate>true</aggregate>
                     <charset>UTF-8</charset>
                     <docencoding>UTF-8</docencoding>
                 </configuration>

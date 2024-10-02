@@ -1,7 +1,7 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package ${package}.test;
+package ${package}.${artifactId}.test;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
