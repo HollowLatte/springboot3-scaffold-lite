@@ -111,8 +111,8 @@
         <!-- 控制台输出 -->
         <appender-ref ref="CONSOLE"/>
         <!-- 文件输出 -->
-        <appender-ref ref="INFO_FILE"/>
-        <appender-ref ref="ERROR_FILE"/>
+        <!--<appender-ref ref="INFO_FILE"/>-->
+        <!--<appender-ref ref="ERROR_FILE"/>-->
         <!-- 异步文件输出 -->
         <!--<appender-ref ref="ASYNC_FILE_INFO"/>-->
         <!--<appender-ref ref="ASYNC_FILE_ERROR"/>-->
