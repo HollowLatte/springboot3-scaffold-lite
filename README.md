@@ -7,8 +7,21 @@
 
 2. 使用脚手架生成工程：
     ```shell
-    mvn archetype:generate -DinteractiveMode=false -DarchetypeGroupId=com.hollowlatte.archetypes -DarchetypeArtifactId=springboot3-scaffold-lite -DarchetypeVersion=1.0.0 -DgroupId=com.hollowlatte -DartifactId=hellotest -Dversion=0.0.1 -DarchetypeCatalog=local -DoutputDirectory=../
+    mvn archetype:generate -X \
+   -DarchetypeArtifactId=springboot3-scaffold-lite \
+   -DarchetypeGroupId=com.hollowlatte.archetypes \
+   -DarchetypeVersion=1.0.0 \
+   -DgroupId=com.hollowlatte \
+   -DartifactId=hellotest \
+   -Dversion=0.0.1 \
+   -DinteractiveMode=false \
+   -DarchetypeCatalog=local \
+   -DoutputDirectory=../
     ```
+
+> 注意：通过IDEA快捷执行命令时，点击shell对应的箭头进行执行，这样才可以正常运行分隔多行的Maven命令，而不是mvn对应的箭头，该箭头只会执行mvn所在的那一行的命令，不会执行其他行。
+
+> 修改命令后如果执行失败，如果命令是正确的，那么排除下换行符\的后面是不是多了空格
 
 ## 远程仓库使用
 

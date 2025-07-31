@@ -1,10 +1,13 @@
 #set($symbol_pound='#')
 #set($symbol_dollar='$')
 #set($symbol_escape='\' )
-package ${package}.${artifactId}.infrastructure.config;
+package ${package}.infrastructure.config.threadpool;
 
+import cn.hutool.core.thread.RejectPolicy;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+
+import java.util.concurrent.RejectedExecutionHandler;
 
 @Data
 @ConfigurationProperties(prefix = "thread.pool.executor.config", ignoreInvalidFields = true)
@@ -27,11 +30,12 @@ public class ThreadPoolConfigProperties {
      */
     private Integer blockQueueSize = 5000;
     /**
-     * AbortPolicy：丢弃任务并抛出RejectedExecutionException异常。
-     * DiscardPolicy：直接丢弃任务，但是不会抛出异常
-     * DiscardOldestPolicy：将最早进入队列的任务删除，之后再尝试加入队列的任务被拒绝
-     * CallerRunsPolicy：如果任务添加线程池失败，那么主线程自己执行该任务
+     * 拒接策略
      */
-    private String policy = "AbortPolicy";
+    private RejectPolicy rejectPolicy = RejectPolicy.ABORT;
+    /**
+     * 线程名称前缀
+     */
+    private String threadNamePrefix = "common-pool";
 
 }
