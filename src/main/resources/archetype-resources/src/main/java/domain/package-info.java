@@ -2,6 +2,6 @@
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
 /**
- * 应用启动层，注意Application所在的包路径，是在上一层。这样才能扫描到其他 module
+ * 应用启动层。包含所有核心业务逻辑、领域模型、领域服务以及仓储接口。这是最核心、最稳定的部分。
  * */
 package ${package}.domain;

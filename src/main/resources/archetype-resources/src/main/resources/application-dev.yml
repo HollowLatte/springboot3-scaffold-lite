@@ -13,7 +13,7 @@ thread:
         max-pool-size: 50
         keep-alive-time: 5000
         block-queue-size: 5000
-        policy: CallerRunsPolicy
+        reject-policy: abort
 
 # 数据库配置；启动时配置数据库资源信息
 spring:

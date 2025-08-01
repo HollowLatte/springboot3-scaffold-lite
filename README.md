@@ -11,8 +11,9 @@
    -DarchetypeArtifactId=springboot3-scaffold-lite \
    -DarchetypeGroupId=com.hollowlatte.archetypes \
    -DarchetypeVersion=1.0.0 \
-   -DgroupId=com.hollowlatte \
-   -DartifactId=hellotest \
+   -DgroupId=com.hollowlatte.hello \
+   -Dpackage=com.hollowlatte.demo \
+   -DartifactId=hello-test \
    -Dversion=0.0.1 \
    -DinteractiveMode=false \
    -DarchetypeCatalog=local \

@@ -2,6 +2,6 @@
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
 /**
- * 应用启动层，注意Application所在的包路径，是在上一层。这样才能扫描到其他 module
+ * 适配器层。负责处理所有与外部系统的交互，例如 Web Controller、消息队列的消费者等。它的作用是将外部请求“适配”成内部的 Command 或 Query。
  * */
 package ${package}.adapter.rpc;
